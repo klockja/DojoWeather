@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <h1>DojoWeather</h1>
+        <nav>
+            <a href="#" onclick="alert('Loading weather report')">Burbank</a>
+            <a href="#" onclick="alert('Loading weather report')">Chicago</a>
+            <a href="#" onclick="alert('Loading weather report')">Dallas</a>
+        </nav>
+    </div>
+    <div class="main-content">
+        <div class="current-location">
+            <h1>San Jose</h1>
+            <div class="temp">
+                <p>show temperature in</p>
+                <select name = "dropdown">
+                    <option value="°C">°C</option>
+                    <option value="°F">°F</option>
+                    </select>
+                </select>
+            </div>
+        </div>
+
+        <hr>
+        <div class="day-cards">
+            <div class="day-card">
+                <h1>Today</h1>
+                <img src="assets/some_rain.png" class="weather-img" alt="some rain">
+                <p>some rain</p>
+                <div class="temps">
+                    <p class="red">23.9°</p>
+                    <p class="blue">18.3°</p>
+                </div>
+            </div>
+            <div class="day-card">
+                <h1>Today</h1>
+                <img src="assets/some_sun.png" class="weather-img" alt="some rain">
+                <p>some sun</p>
+                <div class="temps">
+                    <p class="red">26.7°</p>
+                    <p class="blue">18.9°</p>
+                </div>
+            </div>
+            <div class="day-card">
+                <h1>Today</h1>
+                <img src="assets/some_rain.png" class="weather-img" alt="some rain">
+                <p>some rain</p>
+                <div class="temps">
+                    <p class="red">20.6°</p>
+                    <p class="blue">16.1°</p>
+                </div>
+            </div>
+            <div class="day-card">
+                <h1>Today</h1>
+                <img src="assets/some_sun.png" class="weather-img" alt="some rain">
+                <p>some sun</p>
+                <div class="temps">
+                    <p class="red">25.6°</p>
+                    <p class="blue">21.1°</p>
+                </div>
+            </div>
+        </div>
+        <div id="cookie-dialog">
+            <img src="assets/cookie.png" alt="cookie">
+            <p>This site makes use of third-party cookies, by clicking "I accept" you agree to the terms outlined in our
+                <a href="">cookie policy</a>.</p>
+            <button class="cookie-accept" onclick="document.querySelector('#cookie-dialog').remove()">I Accept</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
